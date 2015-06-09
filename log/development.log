@@ -1,0 +1,6 @@
+
+
+Started GET "/" for ::1 at 2015-06-09 16:36:53 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb (15.9ms)
+Completed 200 OK in 95ms (Views: 61.2ms | ActiveRecord: 0.0ms)
