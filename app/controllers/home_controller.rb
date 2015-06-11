@@ -3,11 +3,9 @@ class HomeController < ActionController::Base
   # include HTTParty
 
   def index
-    @images = []
-    InstagramWorker.perform_async("snow")
-    for image in response["data"]
-      @images << image["images"]["standard_resolution"]["url"]
-    end
+    # InstagramImage.delete_all
+    InstagramWorker.perform_async("trout")
+    @images = InstagramImage.all
   end
 
 end
